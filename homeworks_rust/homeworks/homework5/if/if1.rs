@@ -9,6 +9,11 @@ pub fn bigger(a: i32, b: i32) -> i32 {
     // - additional variables
     // Execute `rustlings hint if1` for hints
 
+    if a > b {
+        return a
+    } else {
+        return b
+    }
 }
 
 // Don't mind this for now :)
