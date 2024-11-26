@@ -39,7 +39,7 @@ fn fruit_basket(basket: &mut HashMap<Fruit, u32>) {
             Fruit::Mango => basket.entry(Fruit::Mango).or_insert(2),
             Fruit::Lychee => basket.entry(Fruit::Lychee).or_insert(5),
             Fruit::Pineapple => basket.entry(Fruit::Pineapple).or_insert(1),
-        }
+        };
     }
 }
 

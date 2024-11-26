@@ -34,15 +34,15 @@ impl State {
 
     fn move_position(&mut self, p: Point) {
         self.position = p;
+    }
         
-        fn process(&mut self, message: Message) {
-            match message {
-                Message::ChangeColor(color) => self.change_color(color),
-                Message::Echo(s) => self.echo(s),
-                Message::Move(p) => self.move_position(p),
-                Message::Quit => self.quit(),
-            }
-        }
+    fn process(&mut self, message: Message) {
+        match message {
+            Message::ChangeColor(color) => self.change_color(color),
+            Message::Echo(s) => self.echo(s),
+            Message::Move(p) => self.move_position(p),
+            Message::Quit => self.quit(),
+        };
     }
 }
 
