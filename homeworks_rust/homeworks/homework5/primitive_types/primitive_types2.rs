@@ -16,12 +16,12 @@ fn main() {
         println!("Neither alphabetic nor numeric!");
     }
 
-    let fav_char = "f*ck";// Finish this line like the example! What's your favorite character?
+    let fav_char = 'F';// Finish this line like the example! What's your favorite character?
     // Try a letter, try a number, try a special character, try a character
     // from a different language than your own, try an emoji!
-    if your_character.is_alphabetic() {
+    if fav_char.is_alphabetic() {
         println!("Alphabetical!");
-    } else if your_character.is_numeric() {
+    } else if fav_char.is_numeric() {
         println!("Numerical!");
     } else {
         println!("Neither alphabetic nor numeric!");
